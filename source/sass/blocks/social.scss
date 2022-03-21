@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  gap: 33px;
+  margin-left: auto;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    gap: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}

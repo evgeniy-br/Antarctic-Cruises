@@ -1,0 +1,191 @@
+.booking {
+  background: $color-light-blue url("../img/background-images/booking-background-desktop.jpg") no-repeat center / cover;
+  min-height: 555px;
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+    min-height: 805px;
+    display: flex;
+    background-image: url("../../img/background-images/booking-background-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 65px;
+    min-height: 760px;
+    background-image: url("../../img/background-images/booking-background-mobile.jpg");
+  }
+}
+
+.booking-wrapper {
+  padding: 50px 163px;
+  width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-default-black;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: auto;
+  }
+}
+
+.booking__text-wrapper {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.booking__text-wrapper h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+}
+
+.booking__text-wrapper p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  width: 360px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 35px;
+  }
+}
+
+.booking__text-wrapper br {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.booking__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 403px;
+  min-height: 455px;
+  padding: 50px;
+  background-color: $color-default-black;
+  color: $color-default-white;
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    min-height: 460px;
+    padding: 40px 30px;
+  }
+}
+
+.booking__form p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+}
+
+.booking__form-input-container input:not(input[type="checkbox"]) {
+  width: 303px;
+  min-height: 35px;
+  padding: 11px 16px;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    width: 230px;
+    min-height: 43px;
+  }
+}
+
+.booking__form-input-container--checkbox {
+  margin-bottom: 30px;
+}
+
+.booking__form-input-container--checkbox input {
+  margin: 18px 0 0 5px;
+}
+
+.booking__form-input-container--checkbox label {
+  font-size: 10px;
+  line-height: 13px;
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: $color-default-white;
+    top: -4px;
+    left: 0;
+
+    @media (max-width: $mobile-width) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    line-height: 12px;
+  }
+}
+
+.booking__form-input-container--checkbox input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url("../img/svg/checked-checkbox.svg") no-repeat;
+    top: 1px;
+    left: 2px;
+  }
+}
+
+.booking__form-button {
+  margin-top: auto;
+  border: none;
+  background-color: $color-default-white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  width: 303px;
+  min-height: 43px;
+  cursor: pointer;
+}

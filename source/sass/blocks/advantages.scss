@@ -1,0 +1,99 @@
+.advantages {
+  background: $color-light-blue url("../img/background-images/advantagest-background.png") no-repeat center / cover;
+  padding: 120px 0;
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 0;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 65px 0;
+    margin-bottom: 65px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    gap: 30px;
+  }
+}
+
+.advantages h2 {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: $color-default-black;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.advantages__item {
+  position: relative;
+  background-color: $color-default-white;
+  padding: 80px 10px 10px 30px;
+  width: 360px;
+  min-height: 241px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 40px;
+    background: url("../img/svg/ship-icon.svg") no-repeat;
+    top: 30px;
+    left: 30px;
+  }
+
+  &--check {
+    &::before {
+      background-image: url("../img/svg/check-icon.svg");
+    }
+  }
+
+  &--boat {
+    &::before {
+      background-image: url("../img/svg/boat-icon.svg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    min-height: 310px;
+    padding: 70px 10px 10px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    min-height: 249px;
+  }
+}
+
+.advantages__item h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $color-default-black;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    line-height: 25px;
+  }
+}
+
+.advantages__item p {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-default-black;
+  margin: 0;
+}

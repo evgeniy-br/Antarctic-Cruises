@@ -2,14 +2,23 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
 // ---------------------------------
 
 @import "variables";
 @import "global/fonts";
+@import "global/utils";
+@import "global/global";
 
 // Blocks
 // ---------------------------------
+
+@import "blocks/page";
+@import "blocks/main-nav";
+@import "blocks/social";
+@import "blocks/about";
+@import "blocks/advantages";
+@import "blocks/upcoming-cruises";
+@import "blocks/booking";
+@import "blocks/contacts";

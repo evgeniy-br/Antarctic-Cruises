@@ -1,0 +1,62 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 1366px;
+  font-size: 18px;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-default-white;
+
+  @media (max-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+  }
+}
+
+.page__header {
+  min-width: 1160px;
+  z-index: 2;
+
+  @media (max-width: $tablet-width) {
+    min-width: 678px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 290px;
+  }
+}
+
+.page__main {
+  flex: 1 0 auto;
+}
+
+.page__footer {
+  background-color: $color-default-black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.page__footer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
