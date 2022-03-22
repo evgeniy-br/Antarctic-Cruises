@@ -68,6 +68,13 @@
   }
 }
 
+.about__header--opened-menu h1,
+.about__header--opened-menu p {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .about__description-container {
   display: flex;
   justify-content: space-around;
