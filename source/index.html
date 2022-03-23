@@ -2,6 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Круизы в антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -48,7 +52,11 @@
               <h2>Путешествие на&nbsp;край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
-            <img src="img/content/pinguins/penguins-desktop.jpg" width="560" height="301" alt="Три пингвина на фоне снега">
+            <picture>
+              <source type="image/webp" srcset="img/content/penguins/penguins-desktop.webp 1x, img/content/penguins/penguins-desktop@2x.webp 2x">
+              <!-- 1x: 560px; 2x: 1120px -->
+              <img src="img/content/penguins/penguins-desktop.jpg" srcset="img/content/penguins/penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Три пингвина на фоне снега">
+            </picture>
           </div>
         </div>
       </section>
@@ -79,7 +87,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Астория”</h3>
-                <img src="img/content/cruises/astoria.jpg" width="260" height="386" alt="Заснеженные горы на фоне ясного неба">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/astoria.webp 1x, img/content/cruises/astoria@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/astoria.jpg" srcset="img/content/cruises/astoria@2x.jpg 2x" width="260" height="386" alt="Заснеженные горы на фоне ясного неба">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -106,7 +118,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Элайн”</h3>
-                <img src="img/content/cruises/minion.jpg" width="260" height="386" alt="Заснеженные горы на фоне ясного неба">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/minion.webp 1x, img/content/cruises/minion@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/minion.jpg" srcset="img/content/cruises/minion@2x.jpg 2x" width="260" height="386" alt="Заснеженные горы на фоне ясного неба">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -133,7 +149,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Атлантис”</h3>
-                <img src="img/content/cruises/atlantis.jpg" width="260" height="386" alt="Айсберг">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/atlantis.webp 1x, img/content/cruises/atlantis@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/atlantis.jpg" srcset="img/content/cruises/atlantis.jpg 2x" width="260" height="386" alt="Айсберг">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -160,7 +180,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Одиссей”</h3>
-                <img src="img/content/cruises/odissey.jpg" width="260" height="386" alt="Заснеженные горы и холодный водоём">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/odissey.webp 1x, img/content/cruises/odissey@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/odissey.jpg" srcset="img/content/cruises/odissey@2x.jpg" width="260" height="386" alt="Заснеженные горы и холодный водоём">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -187,7 +211,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Олимпия”</h3>
-                <img src="img/content/cruises/olympia.jpg" width="260" height="386" alt="Большая колония пингвинов на фоне снега и вечной мерзлоты">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/olympia.webp 1x, img/content/cruises/olympia@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/olympia.jpg" srcset="img/content/cruises/olympia@2x.jpg 2x" width="260" height="386" alt="Большая колония пингвинов на фоне снега и вечной мерзлоты">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -214,7 +242,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Аврора”</h3>
-                <img src="img/content/cruises/aurora.jpg" width="260" height="386" alt="Скалистый берег холодного моря. Вокруг снег, лёд и много пингвинов">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/aurora.webp 1x, img/content/cruises/aurora@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/aurora.jpg" srcset="img/content/cruises/aurora@2x.jpg 2x" width="260" height="386" alt="Скалистый берег холодного моря. Вокруг снег, лёд и много пингвинов">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -241,7 +273,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Леонор”</h3>
-                <img src="img/content/cruises/leonor.jpg" width="260" height="386" alt="Яхта в арктике">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/leonor.webp 1x, img/content/cruises/leonor@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/leonor.jpg" srcset="img/content/cruises/leonor@2x.jpg 2x" width="260" height="386" alt="Яхта в арктике">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">
@@ -268,7 +304,11 @@
             <li class="upcoming-cruises__item">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Минион - 1”</h3>
-                <img src="img/content/cruises/minion.jpg" width="260" height="386" alt="Заснеженные горы, холодное море. Туристы поднимааются на берег.">
+                <picture>
+                  <source type="image/webp" srcset="img/content/cruises/minion.webp 1x, img/content/cruises/minion@2x.webp 2x">
+                  <!-- 1x: 260px; 2x: 520px -->
+                  <img src="img/content/cruises/minion.jpg" srcset="img/content/cruises/minion@2x.jpg 2x" width="260" height="386" alt="Заснеженные горы, холодное море. Туристы поднимааются на берег.">
+                </picture>
               </div>
               <div class="upcoming-cruises__description">
                 <dl class="upcoming-cruises__description-list">

@@ -18,18 +18,27 @@
   padding: 175px 10px 10px 198px;
   margin-bottom: 120px;
 
+
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/background-images/about-background-tablet.jpg");
+    background-image: url("../img/background-images/about-background-tablet.jpg");
     min-height: 638px;
     padding: 190px 10px 10px 45px;
     margin-bottom: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-images/about-background-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/background-images/about-background-mobile.jpg");
+    background-image: url("../img/background-images/about-background-mobile.jpg");
     min-height: 500px;
     padding: 120px 10px 10px 15px;
     margin-bottom: 65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-images/about-background-mobile@2x.jpg");
+    }
   }
 }
 

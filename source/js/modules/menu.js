@@ -10,4 +10,4 @@ menuToggle.addEventListener('click', () => {
   aboutHeader.classList.toggle('about__header--opened-menu');
   navigation.classList.toggle('main-nav--opened');
   navigation.classList.toggle('main-nav--closed');
-})
+});
