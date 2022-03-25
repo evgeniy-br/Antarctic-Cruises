@@ -12,6 +12,7 @@
 
 .contacts__wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 100px;
   color: $color-default-black;
 
@@ -30,7 +31,7 @@
   min-height: 306px;
   background: url("../img/background-images/map-desktop.png") no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/map-desktop@2x.png");
     background-size: 560px auto;
   }
@@ -74,6 +75,7 @@
 
 .contacts__text {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
 }

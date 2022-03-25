@@ -3,7 +3,7 @@
   min-height: 555px;
   margin-bottom: 120px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/booking-background-desktop@2x.jpg");
   }
 
@@ -11,6 +11,7 @@
     margin-bottom: 100px;
     min-height: 805px;
     display: flex;
+    flex-wrap: wrap;
     background-image: url("../../img/background-images/booking-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -33,6 +34,7 @@
   padding: 50px 163px;
   width: 1040px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: $color-default-black;
@@ -50,6 +52,7 @@
 .booking__text-wrapper {
   @media (max-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
@@ -103,7 +106,7 @@
   }
 }
 
-.booking__form {
+.booking form {
   display: flex;
   flex-wrap: wrap;
   width: 403px;

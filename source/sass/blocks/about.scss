@@ -18,6 +18,10 @@
   padding: 175px 10px 10px 198px;
   margin-bottom: 120px;
 
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
+    background-image: url("../img/background-images/about-background-desktop@2x.jpg");
+  }
+
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/background-images/about-background-tablet.jpg");
@@ -86,6 +90,7 @@
 
 .about__description-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 65px;
 
@@ -96,11 +101,12 @@
 
 .about__description-text-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   color: $color-default-black;
   padding: 66px 0;
-  margin-right: 88px;
+  margin-right: 30px;
   width: 512px;
 
   @media (max-width: $tablet-width) {
