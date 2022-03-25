@@ -3,7 +3,7 @@
   min-height: 555px;
   margin-bottom: 120px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/booking-background-desktop@2x.jpg");
   }
 
@@ -103,7 +103,7 @@
   }
 }
 
-.booking__form {
+.booking form {
   display: flex;
   flex-wrap: wrap;
   width: 403px;

@@ -3,7 +3,7 @@
   padding: 120px 0;
   margin-bottom: 120px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/advantagest-background@2x.png");
   }
 

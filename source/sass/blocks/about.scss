@@ -18,6 +18,10 @@
   padding: 175px 10px 10px 198px;
   margin-bottom: 120px;
 
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
+    background-image: url("../img/background-images/about-background-desktop@2x.jpg");
+  }
+
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/background-images/about-background-tablet.jpg");
