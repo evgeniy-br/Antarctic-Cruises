@@ -758,6 +758,10 @@ img {
   margin: 0;
 }
 
+.advantages__item-text-wrap-tablet {
+  display: none;
+}
+
 .advantages__item--check p {
   width: 280px;
 }
@@ -1280,6 +1284,10 @@ img {
 
   .advantages__item h3 {
     line-height: 25px;
+  }
+
+  .advantages__item-text-wrap-tablet {
+    display: block;
   }
 
   .advantages__item--check-text-wrap-desktop {
