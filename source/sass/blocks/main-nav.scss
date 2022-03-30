@@ -5,10 +5,10 @@
   position: relative;
 
   &--header {
-    padding: 35px 103px;
+    padding: 34px 103px;
 
     @media (max-width: $tablet-width) {
-      padding: 30px 45px;
+      padding: 29px 45px;
     }
   }
 
@@ -67,19 +67,29 @@
 .main-nav__logo {
   margin-right: 40px;
   align-self: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 1px 0;
+  }
 }
 
 .main-nav--footer .main-nav__logo {
+  margin-right: 41px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
   @media (max-width: $mobile-width) {
     align-self: flex-start;
-    margin-bottom: 33px;
+    margin-bottom: 18px;
   }
 }
 
 .main-nav--opened .main-nav__logo {
   @media (max-width: $mobile-width) {
     align-self: flex-start;
-    margin-bottom: 33px;
+    margin-bottom: 37px;
   }
 }
 
@@ -94,7 +104,8 @@
   padding: 0;
 
   @media (max-width: $tablet-width) {
-    gap: 23px;
+    gap: 24px;
+    align-items: stretch;
   }
 }
 
@@ -104,13 +115,17 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 10px;
-    gap: 18px;
+    gap: 28px;
   }
 }
 
 .main-nav--footer .main-nav__list {
+  align-content: center;
+  padding: 2px 0 6px;
+
   @media (max-width: $mobile-width) {
-    padding-left: 0;
+    padding: 0;
+    gap: 12px;
   }
 }
 
@@ -142,12 +157,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -1px;
       left: 0;
       width: 24px;
       height: 2px;
       background-color: $color-default-white;
-      box-shadow: 0 7px $color-default-white, 0 14px $color-default-white;
+      box-shadow: 0 6px $color-default-white, 0 12px $color-default-white;
     }
   }
 }
@@ -211,5 +226,6 @@
   @media (max-width: $mobile-width) {
     color: $color-default-black;
     line-height: 22px;
+    font-size: 18px;
   }
 }

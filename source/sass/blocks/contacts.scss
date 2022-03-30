@@ -1,12 +1,12 @@
 .contacts {
-  margin-bottom: 120px;
+  margin-bottom: 117px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 100px;
+    margin-bottom: 96px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column-reverse;
-    gap: 43px;
+    gap: 36px;
   }
 }
 
@@ -77,7 +77,18 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: auto;
+  width: 500px;
+  padding-top: 76px;
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    padding-top: 66px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    padding-top: 0;
+  }
 }
 
 .contacts__text h3 {
@@ -85,7 +96,11 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .contacts__text p {
@@ -99,15 +114,19 @@
     content: "";
     position: absolute;
     background: url("../img/svg/address-icon.svg") no-repeat;
-    top: 0;
+    top: 1px;
     left: 0;
     width: 18px;
     height: 22px;
+
+    @media (max-width: $tablet-width) {
+      top: 3px;
+    }
   }
 }
 
 .contacts__text-address {
-  margin-bottom: 33px;
+  margin-bottom: 21px;
 }
 
 .contacts__text-phone p::before {

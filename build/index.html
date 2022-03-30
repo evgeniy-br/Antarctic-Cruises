@@ -43,7 +43,7 @@
         <!-- Модификатор about__header--opened-menu у блока about__header скрывает заголовок и параграф в блоке -->
 
         <header class="about__header">
-          <h1>Круизы в Антарктику</h1>
+          <h1>Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
         </header>
         <div class="wrapper">
@@ -65,17 +65,16 @@
           <h2>Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3>Небольшой круизный лайнер</h3>
-              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              <h3>Небольшой круизный&nbsp;лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, <br class="advantages__item-text-wrap-tablet"> поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
             <li class="advantages__item advantages__item--check">
-              <h3>Система все включено</h3>
-              <p>Все наши круизы работают
-                по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              <h3>Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают<br class="advantages__item--check-text-wrap-desktop"> по&nbsp;системе “Все Включено”.<br class="advantages__item--check-text-wrap-desktop"> Великолепные&nbsp;блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
             </li>
             <li class="advantages__item advantages__item--boat">
               <h3>Экскурсионные туры на Zodiac</h3>
-              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках&nbsp;типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br>на оборудованных лодках<br class="advantages__item--boat-text-wrap-mobile">типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
             </li>
           </ul>
         </div>
@@ -342,7 +341,9 @@
             <p>Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
           </div>
           <form action="https://echo.htmlacademy.ru" method="POST">
-            <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+            <div class="booking__form-text-wrapper">
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+            </div>
             <div class="booking__form-input-container">
               <label class="visually-hidden" for="name">Ваше имя</label>
               <input type="text" id="name" name="name" placeholder="Имя" required>
@@ -351,7 +352,7 @@
               <label class="visually-hidden" for="phone">Ваш номер телефона</label>
               <input type="tel" id="phone" name="phone" placeholder="Телефон"  pattern="[0-9]{11}" maxlength="11" required>
             </div>
-            <div class="booking__form-input-container">
+            <div class="booking__form-input-container booking__form-input-container--email">
               <label class="visually-hidden" for="email">Ваш email</label>
               <input type="email" id="email" name="email" placeholder="Email">
             </div>
@@ -390,7 +391,7 @@
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--footer">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--footer" href="#">Преимущества</a>
             </li>

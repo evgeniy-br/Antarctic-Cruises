@@ -44,12 +44,15 @@
 
 .page__footer {
   background-color: $color-default-black;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 48px;
+  padding-bottom: 46px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 46px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 39px 0;
   }
 }
 
@@ -60,6 +63,6 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 }

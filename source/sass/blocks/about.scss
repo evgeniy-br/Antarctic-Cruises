@@ -1,13 +1,15 @@
 .about {
   margin-top: -111px;
-  margin-bottom: 120px;
+  margin-bottom: 118px;
 
   @media (max-width: $tablet-width) {
-    margin-top: -94px;
+    margin-top: -84px;
+    margin-bottom: 93px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: -66px;
+    margin-top: -68px;
+    margin-bottom: 62px;
   }
 }
 
@@ -15,7 +17,7 @@
   background: $color-dark-blue url("../img/background-images/about-background-desktop.jpg") no-repeat center;
   background-size: cover;
   min-height: 650px;
-  padding: 175px 10px 10px 198px;
+  padding: 272px 10px 10px 198px;
   margin-bottom: 120px;
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
@@ -26,7 +28,7 @@
   @media (max-width: $tablet-width) {
     background-image: url("../img/background-images/about-background-tablet.jpg");
     min-height: 638px;
-    padding: 190px 10px 10px 45px;
+    padding: 268px 10px 10px 45px;
     margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
@@ -37,7 +39,7 @@
   @media (max-width: $mobile-width) {
     background-image: url("../img/background-images/about-background-mobile.jpg");
     min-height: 500px;
-    padding: 120px 10px 10px 15px;
+    padding: 176px 10px 10px 15px;
     margin-bottom: 65px;
 
     @media (min-resolution: 2dppx) {
@@ -51,22 +53,23 @@
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 11px;
 
   @media (max-width: $tablet-width) {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 29px;
+    margin-bottom: 12px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 }
 
 .about__header p {
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
 
@@ -91,8 +94,7 @@
 .about__description-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 65px;
+  justify-content: space-between;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -105,7 +107,7 @@
   flex-direction: column;
   align-items: flex-start;
   color: $color-default-black;
-  padding: 66px 0;
+  padding: 58px 0;
   margin-right: 30px;
   width: 512px;
 
@@ -118,7 +120,7 @@
     width: 290px;
     padding: 0;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 
@@ -128,13 +130,14 @@
   font-weight: 600;
   width: 450px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 
   @media (max-width: $tablet-width) {
     width: 210px;
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
+    margin-top: -9px;
   }
 
   @media (max-width: $mobile-width) {
