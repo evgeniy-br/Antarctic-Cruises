@@ -474,6 +474,21 @@ img {
   color: #f9fbfd;
 }
 
+.page__body-overlay {
+  overflow-y: hidden;
+}
+
+.page__body-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
 .page__header {
   min-width: 1160px;
   z-index: 2;
@@ -515,7 +530,7 @@ img {
 }
 
 .main-nav--header {
-  padding: 34px 103px;
+  padding: 34px 0;
 }
 
 .main-nav--footer {
@@ -615,8 +630,12 @@ img {
   background: #00346b url("../img/background-images/about-background-desktop.jpg") no-repeat center;
   background-size: cover;
   min-height: 650px;
-  padding: 272px 10px 10px 198px;
   margin-bottom: 120px;
+}
+
+.about__header-wrapper {
+  padding: 272px 198px 30px;
+  width: 970px;
 }
 
 .about__header h1 {
@@ -1128,7 +1147,7 @@ img {
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1023px) {
   .wrapper {
     width: 678px;
     margin: 0 auto;
@@ -1148,7 +1167,7 @@ img {
   }
 
   .main-nav--header {
-    padding: 29px 45px;
+    padding: 29px 0;
   }
 
   .main-nav svg {
@@ -1209,8 +1228,11 @@ img {
   .about__header {
     background-image: url("../img/background-images/about-background-tablet.jpg");
     min-height: 638px;
-    padding: 268px 10px 10px 45px;
     margin-bottom: 100px;
+  }
+
+  .about__header-wrapper {
+    padding: 268px 45px 20px;
   }
 
   .about__header h1 {
@@ -1345,7 +1367,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    background-image: url("../../img/background-images/booking-background-tablet.jpg");
+    background-image: url("../img/background-images/booking-background-tablet.jpg");
   }
 
   .booking-wrapper {
@@ -1424,7 +1446,7 @@ img {
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1365px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .about__header {
     background-image: url("../img/background-images/about-background-tablet@2x.jpg");
   }
@@ -1482,19 +1504,26 @@ img {
   }
 
   .main-nav--opened {
+    position: absolute;
     padding: 20px 15px;
-    margin-left: 35px;
+    width: 285px;
+    height: 100vh;
     background-color: #f9fbfd;
     margin-bottom: -501px;
+    top: 0;
+    right: 0;
   }
 
   .main-nav--nojs {
-    margin-bottom: 67px;
+    position: static;
+    height: auto;
+    margin-bottom: 68px;
     margin-left: 0;
+    background-color: inherit;
   }
 
   .main-nav--closed {
-    padding: 20px 15px;
+    padding: 20px 0;
   }
 
   .main-nav--footer {
@@ -1618,8 +1647,11 @@ img {
   .about__header {
     background-image: url("../img/background-images/about-background-mobile.jpg");
     min-height: 500px;
-    padding: 176px 10px 10px 15px;
     margin-bottom: 65px;
+  }
+
+  .about__header-wrapper {
+    padding: 176px 15px 10px;
   }
 
   .about__header h1 {
@@ -1743,7 +1775,7 @@ img {
     margin-bottom: 58px;
     min-height: 760px;
     padding: 59px 0;
-    background-image: url("../../img/background-images/booking-background-mobile.jpg");
+    background-image: url("../img/background-images/booking-background-mobile.jpg");
   }
 
   .booking__text-wrapper h2 {

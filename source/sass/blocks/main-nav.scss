@@ -5,10 +5,10 @@
   position: relative;
 
   &--header {
-    padding: 34px 103px;
+    padding: 34px 0;
 
     @media (max-width: $tablet-width) {
-      padding: 29px 45px;
+      padding: 29px 0;
     }
   }
 
@@ -21,19 +21,26 @@
     }
 
     &--opened {
+      position: absolute;
       padding: 20px 15px;
-      margin-left: 35px;
+      width: 285px;
+      height: 100vh;
       background-color: $color-default-white;
       margin-bottom: -501px;
+      top: 0;
+      right: 0;
     }
 
     &--nojs {
-      margin-bottom: 67px;
+      position: static;
+      height: auto;
+      margin-bottom: 68px;
       margin-left: 0;
+      background-color: inherit;
     }
 
     &--closed {
-      padding: 20px 15px;
+      padding: 20px 0;
     }
 
     &--footer {

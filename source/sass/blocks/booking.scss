@@ -13,7 +13,7 @@
     min-height: 805px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../../img/background-images/booking-background-tablet.jpg");
+    background-image: url("../img/background-images/booking-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-images/booking-background-tablet@2x.jpg");
@@ -24,7 +24,7 @@
     margin-bottom: 58px;
     min-height: 760px;
     padding: 59px 0;
-    background-image: url("../../img/background-images/booking-background-mobile.jpg");
+    background-image: url("../img/background-images/booking-background-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-images/booking-background-mobile@2x.jpg");

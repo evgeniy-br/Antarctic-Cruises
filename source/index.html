@@ -8,12 +8,21 @@
     <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Лучшие круизы в Антарктику">
+    <link rel="icon" href="favicon.ico">
     <title>Круизы в антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+
+  <!-- Модификатор page__body-overlay у блока page__body добавляет overlay -->
+
   <body class="page__body">
-    <header class="page__header">
-      <nav class="page__main-nav main-nav main-nav--header main-nav--nojs">
+    <header class="page__header wrapper">
+
+      <!-- Модификатор main-nav--nojs у блока main-nav активирует состояние без JS -->
+      <!-- Модификатор main-nav--closed у блока main-nav - меню закрыто -->
+      <!-- Модификатор main-nav--opened у блока main-nav - меню открыто -->
+
+      <nav class="page__main-nav main-nav main-nav--header main-nav--opened main-nav--nojs">
         <a class="main-nav__logo">
           <svg width="70" height="38" fill="#f9fbfd">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -44,8 +53,10 @@
         <!-- Модификатор about__header--opened-menu у блока about__header скрывает заголовок и параграф в блоке -->
 
         <header class="about__header">
-          <h1>Круизы в&nbsp;Антарктику</h1>
-          <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+          <div class="about__header-wrapper wrapper">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+          </div>
         </header>
         <div class="wrapper">
           <div class="about__description-container">
