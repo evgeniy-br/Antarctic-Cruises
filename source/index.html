@@ -65,6 +65,8 @@
               <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
             <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/content/penguins/penguins-mobile.webp 1x, img/content/penguins/penguins-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/content/penguins/penguins-tablet.webp 1x, img/content/penguins/penguins-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/penguins/penguins-desktop.webp 1x, img/content/penguins/penguins-desktop@2x.webp 2x">
               <!-- 1x: 560px; 2x: 1120px -->
               <img src="img/content/penguins/penguins-desktop.jpg" srcset="img/content/penguins/penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Три пингвина на фоне снега">
@@ -73,11 +75,11 @@
         </div>
       </section>
       <section class="advantages" id="advantages">
-        <div class="wrapper">
+        <div class="advantages__wrapper">
           <h2>Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3>Небольшой круизный&nbsp;лайнер</h3>
+              <h3>Небольшой <br class="advantages__item--ship-head-wrap-mobile"> круизный лайнер</h3>
               <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, <br class="advantages__item-text-wrap-tablet"> поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
             <li class="advantages__item advantages__item--check">
@@ -86,7 +88,7 @@
             </li>
             <li class="advantages__item advantages__item--boat">
               <h3>Экскурсионные туры на Zodiac</h3>
-              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br>на оборудованных лодках<br class="advantages__item--boat-text-wrap-mobile">типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br>на оборудованных лодках <br class="advantages__item--boat-text-wrap-mobile"> типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
             </li>
           </ul>
         </div>
@@ -95,7 +97,7 @@
         <div class="wrapper">
           <h2>Ближайшие круизы</h2>
           <ul class="upcoming-cruises__list">
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Астория”</h3>
                 <picture>
@@ -126,7 +128,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Элайн”</h3>
                 <picture>
@@ -157,7 +159,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Атлантис”</h3>
                 <picture>
@@ -188,7 +190,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Одиссей”</h3>
                 <picture>
@@ -219,7 +221,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Олимпия”</h3>
                 <picture>
@@ -250,7 +252,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Аврора”</h3>
                 <picture>
@@ -281,7 +283,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Леонор”</h3>
                 <picture>
@@ -312,7 +314,7 @@
                 <a class="upcoming-cruises__description-button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="upcoming-cruises__item">
+            <li class="upcoming-cruises__item" tabindex="0">
               <div class="upcoming-cruises__item-wrapper">
                 <h3>Круиз “Минион - 1”</h3>
                 <picture>
@@ -362,7 +364,7 @@
             </div>
             <div class="booking__form-input-container">
               <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-              <input type="tel" id="phone" name="phone" placeholder="Телефон"  pattern="[0-9]{11}" maxlength="11" required>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
             </div>
             <div class="booking__form-input-container booking__form-input-container--email">
               <label class="visually-hidden" for="email">Ваш email</label>
@@ -389,7 +391,7 @@
               <p>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
             </div>
             <div class="contacts__text-phone">
-              <p>8-800-200-00-00</p>
+              <p><a class="contacts__text-phone-link" href="tel:88002000000">8-800-200-00-00</a></p>
             </div>
           </div>
         </div>

@@ -8,13 +8,30 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 88px 0 99px;
+    padding: 88px 0 100px;
     margin-bottom: 91px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 55px 0 66px;
     margin-bottom: 58px;
+  }
+}
+
+.advantages__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 103px;
+  box-sizing: content-box;
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+    padding: 0 5.86%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90.6%;
+    padding: 0 4.7%;
   }
 }
 
@@ -27,7 +44,7 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    gap: 30px;
+    gap: 31px;
   }
 }
 
@@ -100,14 +117,14 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 206px;
-    min-height: 310px;
-    padding: 70px 10px 10px 20px;
+    flex-grow: 1;
+    width: 30%;
+    padding: 70px 10px 19px 20px;
+    min-height: auto;
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
-    min-height: 249px;
+    width: 100%;
     padding-top: 71px;
   }
 }
@@ -123,18 +140,31 @@
   @media (max-width: $tablet-width) {
     line-height: 25px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
+  }
+}
+
+
+.advantages__item--ship-head-wrap-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .advantages__item--check h3 {
   @media (max-width: $mobile-width) {
-    width: 133px;
+    width: 46%;
     margin-bottom: 9px;
   }
 }
 
 .advantages__item--boat h3 {
   @media (max-width: $mobile-width) {
-    width: 151px;
+    width: 61%;
   }
 }
 
@@ -163,11 +193,11 @@
   width: 280px;
 
   @media (max-width: $tablet-width) {
-    width: 162px;
+    width: 89%;
   }
 
   @media (max-width: $mobile-width) {
-    width: 223px;
+    width: 85%;
   }
 }
 
@@ -175,11 +205,11 @@
   width: 241px;
 
   @media (max-width: $tablet-width) {
-    width: 167px;
+    width: 96%;
   }
 
   @media (max-width: $mobile-width) {
-    width: 233px;
+    width: 90%;
   }
 }
 

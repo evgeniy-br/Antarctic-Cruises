@@ -132,3 +132,8 @@
 .contacts__text-phone p::before {
   background-image: url("../img/svg/phone-icon.svg");
 }
+
+.contacts__text-phone-link {
+  color: $color-default-black;
+  text-decoration: none;
+}

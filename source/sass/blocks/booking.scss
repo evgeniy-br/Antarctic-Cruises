@@ -233,6 +233,28 @@
   }
 }
 
+.booking__form-input-container--checkbox input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: url("../img/svg/checked-checkbox.svg") no-repeat;
+    top: 1px;
+    left: 2px;
+
+    @media (max-width: $mobile-width) {
+      top: 8px;
+      left: 4px;
+    }
+  }
+}
+
+.booking__form-input-container--checkbox input:focus + label {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 7px;
+}
+
 .booking__form-button {
   margin-top: auto;
   border: none;

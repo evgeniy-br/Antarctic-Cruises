@@ -47,7 +47,6 @@
   width: 260px;
   min-height: 386px;
   background-color: $color-light-blue;
-  cursor: pointer;
   line-height: 0;
 
   @media (max-width: $tablet-width) {
@@ -84,7 +83,8 @@
   }
 }
 
-.upcoming-cruises__item:hover h3 {
+.upcoming-cruises__item:hover h3,
+.upcoming-cruises__item--focused h3 {
   top: 29px;
   left: 25px;
   bottom: auto;
@@ -129,7 +129,8 @@
   }
 }
 
-.upcoming-cruises__item:hover .upcoming-cruises__description {
+.upcoming-cruises__item:hover .upcoming-cruises__description,
+.upcoming-cruises__description--focused {
   visibility: visible;
   display: flex;
   flex-wrap: wrap;
@@ -167,6 +168,14 @@
   line-height: 21px;
   font-weight: 600;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     width: 239px;

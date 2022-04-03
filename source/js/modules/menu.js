@@ -3,6 +3,7 @@ const menuToggle = document.querySelector('.main-nav__toggle');
 const aboutHeader = document.querySelector('.about__header');
 const pageBody= document.querySelector('.page__body');
 const overlay = document.querySelector('.page__body-overlay');
+const cardsCruises = document.querySelectorAll('.upcoming-cruises__item');
 
 navigation.classList.remove('main-nav--nojs');
 navigation.classList.remove('main-nav--opened');
@@ -25,3 +26,21 @@ window.addEventListener('click', (evt) => { // при клике в любом �
     aboutHeader.classList.remove('about__header--opened-menu'); // удаляем класс скрывающий содержимое хедера при открытой навигации
   }
 })
+
+cardsCruises.forEach((cardCruise) => {
+  const cardCruiseButton = cardCruise.querySelector('.upcoming-cruises__description-button');
+  const cruiseDescription = cardCruise.querySelector('.upcoming-cruises__description');
+
+  cardCruise.addEventListener('focus', () => {
+    cruiseDescription.classList.toggle('upcoming-cruises__description--focused');
+    cardCruise.classList.toggle('upcoming-cruises__item--focused');
+    cardCruiseButton.focus();
+  })
+
+  cardCruiseButton.addEventListener('blur', () => {
+    cruiseDescription.classList.toggle('upcoming-cruises__description--focused');
+    cardCruise.classList.toggle('upcoming-cruises__item--focused');
+  })
+})
+
+

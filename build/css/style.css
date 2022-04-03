@@ -711,6 +711,14 @@ img {
   margin-bottom: 110px;
 }
 
+.advantages__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 103px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 .advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -768,6 +776,10 @@ img {
   color: #011c40;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.advantages__item--ship-head-wrap-mobile {
+  display: none;
 }
 
 .advantages__item p {
@@ -829,7 +841,6 @@ img {
   width: 260px;
   min-height: 386px;
   background-color: #a8c7ed;
-  cursor: pointer;
   line-height: 0;
 }
 
@@ -852,7 +863,8 @@ img {
   font-weight: 500;
 }
 
-.upcoming-cruises__item:hover h3 {
+.upcoming-cruises__item:hover h3,
+.upcoming-cruises__item--focused h3 {
   top: 29px;
   left: 25px;
   bottom: auto;
@@ -877,7 +889,8 @@ img {
   padding: 69px 25px 35px;
 }
 
-.upcoming-cruises__item:hover .upcoming-cruises__description {
+.upcoming-cruises__item:hover .upcoming-cruises__description,
+.upcoming-cruises__description--focused {
   visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,6 +934,14 @@ img {
   line-height: 21px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.upcoming-cruises__description-button:hover {
+  opacity: 0.9;
+}
+
+.upcoming-cruises__description-button:active {
+  opacity: 0.5;
 }
 
 .booking {
@@ -1044,6 +1065,21 @@ img {
   left: 2px;
 }
 
+.booking__form-input-container--checkbox input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background: url("../img/svg/checked-checkbox.svg") no-repeat;
+  top: 1px;
+  left: 2px;
+}
+
+.booking__form-input-container--checkbox input:focus + label {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 7px;
+}
+
 .booking__form-button {
   margin-top: auto;
   border: none;
@@ -1126,6 +1162,11 @@ img {
 
 .contacts__text-phone p::before {
   background-image: url("../img/svg/phone-icon.svg");
+}
+
+.contacts__text-phone-link {
+  color: #011c40;
+  text-decoration: none;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
@@ -1269,12 +1310,17 @@ img {
   }
 
   .advantages {
-    padding: 88px 0 99px;
+    padding: 88px 0 100px;
     margin-bottom: 91px;
   }
 
+  .advantages__wrapper {
+    width: 88%;
+    padding: 0 5.86%;
+  }
+
   .advantages__list {
-    gap: 30px;
+    gap: 31px;
   }
 
   .advantages h2 {
@@ -1299,9 +1345,12 @@ img {
   }
 
   .advantages__item {
-    width: 206px;
-    min-height: 310px;
-    padding: 70px 10px 10px 20px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 30%;
+    padding: 70px 10px 19px 20px;
+    min-height: auto;
   }
 
   .advantages__item h3 {
@@ -1317,11 +1366,11 @@ img {
   }
 
   .advantages__item--check p {
-    width: 162px;
+    width: 89%;
   }
 
   .advantages__item--boat p {
-    width: 167px;
+    width: 96%;
   }
 
   .upcoming-cruises {
@@ -1342,7 +1391,8 @@ img {
     left: 34px;
   }
 
-  .upcoming-cruises__item:hover h3 {
+  .upcoming-cruises__item:hover h3,
+  .upcoming-cruises__item--focused h3 {
     left: 35px;
   }
 
@@ -1577,7 +1627,7 @@ img {
     display: block;
     position: absolute;
     top: 25px;
-    right: 15px;
+    right: 0;
     border: none;
     cursor: pointer;
     background-color: inherit;
@@ -1603,6 +1653,7 @@ img {
   .main-nav--opened .main-nav__toggle {
     width: 18px;
     height: 18px;
+    right: 13px;
   }
 
   .main-nav--opened .main-nav__toggle::before,
@@ -1703,6 +1754,11 @@ img {
     margin-bottom: 58px;
   }
 
+  .advantages__wrapper {
+    width: 90.6%;
+    padding: 0 4.7%;
+  }
+
   .advantages h2 {
     font-size: 24px;
     line-height: 36px;
@@ -1710,26 +1766,33 @@ img {
   }
 
   .advantages__item {
-    width: 290px;
-    min-height: 249px;
+    width: 100%;
     padding-top: 71px;
   }
 
+  .advantages__item h3 {
+    margin-bottom: 8px;
+  }
+
+  .advantages__item--ship-head-wrap-mobile {
+    display: block;
+  }
+
   .advantages__item--check h3 {
-    width: 133px;
+    width: 46%;
     margin-bottom: 9px;
   }
 
   .advantages__item--boat h3 {
-    width: 151px;
+    width: 61%;
   }
 
   .advantages__item--check p {
-    width: 223px;
+    width: 85%;
   }
 
   .advantages__item--boat p {
-    width: 233px;
+    width: 90%;
   }
 
   .advantages__item--boat-text-wrap-mobile {
@@ -1755,7 +1818,8 @@ img {
     left: 25px;
   }
 
-  .upcoming-cruises__item:hover h3 {
+  .upcoming-cruises__item:hover h3,
+  .upcoming-cruises__item--focused h3 {
     left: 25px;
   }
 
@@ -1835,6 +1899,11 @@ img {
     width: 20px;
     height: 20px;
     top: 2px;
+  }
+
+  .booking__form-input-container--checkbox input:checked + label::after {
+    top: 8px;
+    left: 4px;
   }
 
   .booking__form-input-container--checkbox input:checked + label::after {
