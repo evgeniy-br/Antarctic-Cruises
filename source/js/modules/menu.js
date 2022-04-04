@@ -3,6 +3,7 @@ const menuToggle = document.querySelector('.main-nav__toggle');
 const pageAbout = document.querySelector('.page__about');
 const pageBody= document.querySelector('.page__body');
 const overlay = document.querySelector('.page__body-overlay');
+const menuItems = document.querySelectorAll('.main-nav__link');
 
 navigation.classList.remove('main-nav--nojs');
 navigation.classList.remove('main-nav--opened');
@@ -24,3 +25,13 @@ window.addEventListener('click', (evt) => { // при клике в любом �
     pageAbout.classList.remove('page__about--opened-menu'); // удаляем класс скрывающий содержимое хедера при открытой навигации
   }
 })
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    navigation.classList.toggle('main-nav--opened');
+    navigation.classList.toggle('main-nav--closed');
+    pageBody.classList.toggle('page__body-overlay');
+    pageAbout.classList.toggle('page__about--opened-menu');
+  })
+})
+

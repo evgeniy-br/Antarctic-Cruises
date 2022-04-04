@@ -1,4 +1,4 @@
-const anchors = document.querySelectorAll('header a[href*="#"]');
+const anchors = document.querySelectorAll('.main-nav__list a[href*="#"]');
 
 for (let anchor of anchors) {
   if (anchor) {
