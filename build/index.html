@@ -16,48 +16,50 @@
   <!-- Модификатор page__body-overlay у блока page__body добавляет overlay -->
 
   <body class="page__body">
-    <header class="page__header wrapper">
+    <header class="page__header">
 
       <!-- Модификатор main-nav--nojs у блока main-nav активирует состояние без JS -->
       <!-- Модификатор main-nav--closed у блока main-nav - меню закрыто -->
       <!-- Модификатор main-nav--opened у блока main-nav - меню открыто -->
 
-      <nav class="page__main-nav main-nav main-nav--header main-nav--opened main-nav--nojs">
-        <a class="main-nav__logo">
-          <svg width="70" height="38" fill="#f9fbfd">
-            <use xlink:href="img/sprite_auto.svg#logo"></use>
-          </svg>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Главное меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#advantages">Преимущества</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#upcoming-cruises">Ближайшие круизы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <nav class="page__main-nav main-nav main-nav--header main-nav--opened main-nav--nojs">
+          <a class="main-nav__logo">
+            <svg width="70" height="38" fill="#f9fbfd">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Главное меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#upcoming-cruises">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Модификатор page__about--opened-menu у блока page__about скрывает заголовок и параграф в блоке -->
+
+        <div class="page__about">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+        </div>
+      </div>
     </header>
     <main class="page__main">
       <section class="about">
 
-        <!-- Модификатор about__header--opened-menu у блока about__header скрывает заголовок и параграф в блоке -->
 
-        <header class="about__header">
-          <div class="about__header-wrapper wrapper">
-            <h1>Круизы в&nbsp;Антарктику</h1>
-            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
-          </div>
-        </header>
         <div class="wrapper">
           <div class="about__description-container">
             <div class="about__description-text-container">

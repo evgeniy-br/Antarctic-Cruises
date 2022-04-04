@@ -1,6 +1,6 @@
 const navigation = document.querySelector('.main-nav');
 const menuToggle = document.querySelector('.main-nav__toggle');
-const aboutHeader = document.querySelector('.about__header');
+const pageAbout = document.querySelector('.page__about');
 const pageBody= document.querySelector('.page__body');
 const overlay = document.querySelector('.page__body-overlay');
 
@@ -9,7 +9,7 @@ navigation.classList.remove('main-nav--opened');
 navigation.classList.add('main-nav--closed');
 
 menuToggle.addEventListener('click', () => {
-  aboutHeader.classList.toggle('about__header--opened-menu');
+  pageAbout.classList.toggle('page__about--opened-menu');
   pageBody.classList.toggle('page__body-overlay');
   navigation.classList.toggle('main-nav--opened');
   navigation.classList.toggle('main-nav--closed');

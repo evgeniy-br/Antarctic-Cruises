@@ -1,103 +1,12 @@
 .about {
-  margin-top: -111px;
-  margin-bottom: 118px;
+  margin-bottom: 117px;
 
   @media (max-width: $tablet-width) {
-    margin-top: -84px;
     margin-bottom: 93px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: -68px;
     margin-bottom: 62px;
-  }
-}
-
-.about__header {
-  background: $color-dark-blue url("../img/background-images/about-background-desktop.jpg") no-repeat center;
-  background-size: cover;
-  min-height: 650px;
-  margin-bottom: 120px;
-
-  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
-    background-image: url("../img/background-images/about-background-desktop@2x.jpg");
-  }
-
-
-  @media (max-width: $tablet-width) {
-    background-image: url("../img/background-images/about-background-tablet.jpg");
-    min-height: 638px;
-    margin-bottom: 100px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-images/about-background-tablet@2x.jpg");
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    background-image: url("../img/background-images/about-background-mobile.jpg");
-    min-height: 500px;
-    margin-bottom: 65px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-images/about-background-mobile@2x.jpg");
-    }
-  }
-}
-
-.about__header-wrapper {
-  padding: 272px 198px 30px;
-  width: 970px;
-
-  @media (max-width: $tablet-width) {
-    padding: 268px 45px 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 176px 15px 10px;
-  }
-}
-
-.about__header h1 {
-  margin: 0;
-  font-size: 54px;
-  line-height: 66px;
-  font-weight: 700;
-  margin-bottom: 11px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 12px;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 11px;
-  }
-}
-
-.about__header p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.about__header--opened-menu h1,
-.about__header--opened-menu p {
-  @media (max-width: $mobile-width) {
-    display: none;
   }
 }
 
