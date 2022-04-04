@@ -510,8 +510,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -521,8 +519,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -839,8 +835,7 @@ img {
   display: grid;
   position: relative;
   width: 260px;
-  min-height: 386px;
-  background-color: #a8c7ed;
+  height: 386px;
   line-height: 0;
 }
 
@@ -868,11 +863,13 @@ img {
   top: 29px;
   left: 25px;
   bottom: auto;
+  z-index: 2;
 }
 
 .upcoming-cruises__item img {
   width: 260px;
   height: 386px;
+  background-color: #a8c7ed;
 }
 
 .upcoming-cruises__description {
@@ -887,6 +884,7 @@ img {
   height: 100%;
   margin: 0;
   padding: 69px 25px 35px;
+  z-index: 1;
 }
 
 .upcoming-cruises__item:hover .upcoming-cruises__description,
@@ -934,6 +932,10 @@ img {
   line-height: 21px;
   font-weight: 600;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .upcoming-cruises__description-button:hover {
@@ -1033,6 +1035,10 @@ img {
   line-height: 21px;
 }
 
+.booking__form-input-container input:not(input[type="checkbox"]):focus:invalid {
+  outline-color: #e75480;
+}
+
 .booking__form-input-container--checkbox input {
   margin: 18px 0 0 5px;
 }
@@ -1043,6 +1049,10 @@ img {
   position: relative;
   padding-left: 23px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .booking__form-input-container--checkbox label::before {
@@ -1065,18 +1075,13 @@ img {
   left: 2px;
 }
 
-.booking__form-input-container--checkbox input:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 8px;
-  background: url("../img/svg/checked-checkbox.svg") no-repeat;
-  top: 1px;
-  left: 2px;
-}
-
 .booking__form-input-container--checkbox input:focus + label {
   outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 7px;
+}
+
+.booking__form-input-container--checkbox input:focus:invalid + label {
+  outline: 5px auto #e75480;
   outline-offset: 7px;
 }
 
@@ -1090,6 +1095,10 @@ img {
   width: 303px;
   min-height: 43px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .contacts {
@@ -1899,11 +1908,6 @@ img {
     width: 20px;
     height: 20px;
     top: 2px;
-  }
-
-  .booking__form-input-container--checkbox input:checked + label::after {
-    top: 8px;
-    left: 4px;
   }
 
   .booking__form-input-container--checkbox input:checked + label::after {

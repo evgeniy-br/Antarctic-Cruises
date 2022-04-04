@@ -362,13 +362,13 @@
               <label class="visually-hidden" for="name">Ваше имя</label>
               <input type="text" id="name" name="name" placeholder="Имя" required>
             </div>
-            <div class="booking__form-input-container">
+            <div class="booking__form-input-container booking__form-input-container--phone">
               <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-              <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" title="Используйте числовой формат" pattern="^[0-9]+$" required>
             </div>
             <div class="booking__form-input-container booking__form-input-container--email">
               <label class="visually-hidden" for="email">Ваш email</label>
-              <input type="email" id="email" name="email" placeholder="Email">
+              <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="booking__form-input-container booking__form-input-container--checkbox">
               <input class="visually-hidden" type="checkbox" id="approval" name="approval" checked required>

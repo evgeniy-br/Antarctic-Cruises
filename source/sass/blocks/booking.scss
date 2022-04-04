@@ -179,6 +179,10 @@
     width: 230px;
     min-height: 43px;
   }
+
+  &:focus:invalid {
+    outline-color: $color-invalid-input;
+  }
 }
 
 .booking__form-input-container--checkbox input {
@@ -191,6 +195,7 @@
   position: relative;
   padding-left: 23px;
   cursor: pointer;
+  user-select: none;
 
   @media (max-width: $mobile-width) {
     line-height: 12px;
@@ -233,25 +238,13 @@
   }
 }
 
-.booking__form-input-container--checkbox input:checked + label {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 8px;
-    background: url("../img/svg/checked-checkbox.svg") no-repeat;
-    top: 1px;
-    left: 2px;
-
-    @media (max-width: $mobile-width) {
-      top: 8px;
-      left: 4px;
-    }
-  }
-}
-
 .booking__form-input-container--checkbox input:focus + label {
   outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 7px;
+}
+
+.booking__form-input-container--checkbox input:focus:invalid + label {
+  outline: 5px auto $color-invalid-input;
   outline-offset: 7px;
 }
 
@@ -265,4 +258,5 @@
   width: 303px;
   min-height: 43px;
   cursor: pointer;
+  user-select: none;
 }

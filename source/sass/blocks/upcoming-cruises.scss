@@ -45,8 +45,7 @@
   display: grid;
   position: relative;
   width: 260px;
-  min-height: 386px;
-  background-color: $color-light-blue;
+  height: 386px;
   line-height: 0;
 
   @media (max-width: $tablet-width) {
@@ -88,6 +87,7 @@
   top: 29px;
   left: 25px;
   bottom: auto;
+  z-index: 2;
 
   @media (max-width: $tablet-width) {
     left: 35px;
@@ -101,6 +101,7 @@
 .upcoming-cruises__item img {
   width: 260px;
   height: 386px;
+  background-color: $color-light-blue;
 
   @media (max-width: $tablet-width) {
     width: 309px;
@@ -119,6 +120,7 @@
   height: 100%;
   margin: 0;
   padding: 69px 25px 35px;
+  z-index: 1;
 
   @media (max-width: $tablet-width) {
     padding-left: 35px;
@@ -168,6 +170,7 @@
   line-height: 21px;
   font-weight: 600;
   text-decoration: none;
+  user-select: none;
 
   &:hover {
     opacity: 0.9;
