@@ -494,7 +494,6 @@ img {
   background-size: cover;
   min-height: 650px;
   margin-bottom: 120px;
-  z-index: 2;
 }
 
 .page__about {
@@ -544,6 +543,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
+  z-index: 2;
 }
 
 .main-nav--header {
@@ -1586,9 +1586,8 @@ img {
   .main-nav--nojs {
     position: static;
     height: auto;
-    margin-bottom: 68px;
-    margin-left: 0;
-    background-color: inherit;
+    margin-bottom: -60px;
+    background-color: #f9fbfd;
   }
 
   .main-nav--closed {

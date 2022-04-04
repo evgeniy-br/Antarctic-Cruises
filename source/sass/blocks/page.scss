@@ -44,7 +44,6 @@
   background-size: cover;
   min-height: 650px;
   margin-bottom: 120px;
-  z-index: 2;
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/about-background-desktop@2x.jpg");

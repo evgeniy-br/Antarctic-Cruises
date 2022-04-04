@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  z-index: 2;
 
   &--header {
     padding: 34px 0;
@@ -33,9 +34,8 @@
     &--nojs {
       position: static;
       height: auto;
-      margin-bottom: 68px;
-      margin-left: 0;
-      background-color: inherit;
+      margin-bottom: -60px;
+      background-color: $color-default-white;
     }
 
     &--closed {
