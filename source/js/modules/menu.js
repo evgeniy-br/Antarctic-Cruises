@@ -28,10 +28,21 @@ window.addEventListener('click', (evt) => { // при клике в любом �
 
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
-    navigation.classList.toggle('main-nav--opened');
-    navigation.classList.toggle('main-nav--closed');
-    pageBody.classList.toggle('page__body-overlay');
-    pageAbout.classList.toggle('page__about--opened-menu');
+    if (navigation.classList.contains('main-nav--opened')) {
+      navigation.classList.remove('main-nav--opened');
+    }
+
+    if (!navigation.classList.contains('main-nav--closed')) {
+      navigation.classList.add('main-nav--closed');
+    }
+
+    if (pageBody.classList.contains('page__body-overlay')) {
+      pageBody.classList.remove('page__body-overlay');
+    }
+
+    if (pageAbout.classList.contains('page__about--opened-menu')) {
+      pageAbout.classList.remove('page__about--opened-menu');
+    }
   })
 })
 
