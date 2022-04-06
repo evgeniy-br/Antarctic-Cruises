@@ -14,9 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: content-box;
+  width: 1160px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    width: auto;
   }
 }
 
@@ -37,9 +45,17 @@
 
   @media (max-width: $mobile-width) {
     width: 290px;
-    padding: 0;
-    margin-right: 0;
+    padding: 0 15px;
+    margin: 0 auto;
     margin-bottom: 33px;
+    box-sizing: content-box;
+  }
+
+  @media (max-width: $mobile-width) and (min-width: $adaptive-mobile) {
+    width: auto;
+    margin: 0;
+    margin-bottom: 33px;
+    text-align: center;
   }
 }
 
@@ -62,6 +78,11 @@
   @media (max-width: $mobile-width) {
     font-size: 24px;
     line-height: 34px;
+    width: 67%;
+  }
+
+  @media (max-width: $mobile-width) and (min-width: $adaptive-mobile) {
+    width: 100%;
   }
 }
 
@@ -75,7 +96,23 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
+    width: auto;
+  }
+}
+
+.about__img-wrapper {
+  width: auto;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90%;
   }
 }
 
@@ -91,7 +128,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
-    height: 186px;
+    width: 100%;
+    height: auto;
   }
 }

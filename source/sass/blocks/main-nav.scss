@@ -72,10 +72,16 @@
 
 .main-nav__logo {
   margin-right: 40px;
-  align-self: center;
+  align-self: flex-start;
+}
 
+.main-nav__logo--footer {
   @media (max-width: $tablet-width) {
-    padding: 1px 0;
+    padding: 4px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
   }
 }
 
@@ -88,7 +94,7 @@
 
   @media (max-width: $mobile-width) {
     align-self: flex-start;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 }
 

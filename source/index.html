@@ -22,7 +22,7 @@
       <!-- Модификатор main-nav--closed у блока main-nav - меню закрыто -->
       <!-- Модификатор main-nav--opened у блока main-nav - меню открыто -->
 
-      <div class="wrapper">
+      <div class="page__header-wrapper wrapper">
         <nav class="page__main-nav main-nav main-nav--header main-nav--opened main-nav--nojs">
           <a class="main-nav__logo">
             <svg width="70" height="38" fill="#f9fbfd">
@@ -59,13 +59,12 @@
     <main class="page__main">
       <section class="about">
 
-
-        <div class="wrapper">
-          <div class="about__description-container">
-            <div class="about__description-text-container">
-              <h2>Путешествие на&nbsp;край Земли</h2>
-              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-            </div>
+        <div class="about__description-container">
+          <div class="about__description-text-container">
+            <h2>Путешествие на&nbsp;край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          </div>
+          <div class="about__img-wrapper wrapper">
             <picture>
               <source media="(max-width: 767px)" type="image/webp" srcset="img/content/penguins/penguins-mobile.webp 1x, img/content/penguins/penguins-mobile@2x.webp 2x">
               <source media="(max-width: 1023px)" type="image/webp" srcset="img/content/penguins/penguins-tablet.webp 1x, img/content/penguins/penguins-tablet@2x.webp 2x">
@@ -109,6 +108,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Астория”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -140,6 +140,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Элайн”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -171,6 +172,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Атлантис”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -202,6 +204,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Одиссей”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -264,6 +267,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Аврора”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -295,6 +299,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Леонор”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -326,6 +331,7 @@
                 </picture>
               </div>
               <div class="upcoming-cruises__description">
+                <h3>Круиз “Минион - 1”</h3>
                 <dl class="upcoming-cruises__description-list">
                   <div class="upcoming-cruises__description-list-container">
                     <dt class="upcoming-cruises__description-term">Маршрут</dt>
@@ -402,7 +408,7 @@
     <footer class="page__footer">
       <div class="page__footer-wrapper wrapper">
         <nav class="main-nav main-nav--footer">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo main-nav__logo--footer">
             <svg width="70" height="38" fill="#f9fbfd">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>

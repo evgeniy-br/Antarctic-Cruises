@@ -4,14 +4,17 @@
   gap: 29px;
   margin-left: auto;
   padding-top: 13px;
+  min-width: 109px;
 
   @media (max-width: $tablet-width) {
     gap: 23px;
     padding-top: 5px;
+    min-width: 87px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0;
+    min-width: auto;
   }
 }
 

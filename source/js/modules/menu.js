@@ -45,4 +45,3 @@ menuItems.forEach((menuItem) => {
     }
   })
 })
-
