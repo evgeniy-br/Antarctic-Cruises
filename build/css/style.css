@@ -870,7 +870,8 @@ img {
 
 .upcoming-cruises__description {
   visibility: hidden;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
