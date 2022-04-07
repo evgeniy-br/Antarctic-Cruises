@@ -99,7 +99,7 @@
 .upcoming-cruises__description {
   visibility: hidden;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   grid-area: 1 / 1 / 2 / 2;
   background-color: $color-default-black;
   width: 100%;
