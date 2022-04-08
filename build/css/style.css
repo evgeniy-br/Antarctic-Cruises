@@ -584,6 +584,7 @@ img {
   -ms-flex-line-pack: center;
   align-content: center;
   padding: 2px 0 6px;
+  min-width: 600px;
 }
 
 .main-nav__toggle {
@@ -744,7 +745,7 @@ img {
 .advantages__item {
   position: relative;
   background-color: #f9fbfd;
-  padding: 80px 10px 10px 30px;
+  padding: 80px 20px 20px 30px;
   width: 360px;
   min-height: 241px;
 }
@@ -1970,6 +1971,98 @@ img {
   .contacts__map {
     background-image: url("../img/background-images/map-mobile@2x.png");
     background-size: 290px auto;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1366px) {
+  .wrapper {
+    width: 85%;
+    padding: 0 7%;
+  }
+
+  .page__body {
+    min-width: 100%;
+  }
+
+  .about__description-container {
+    width: 85%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .about__description-text-container {
+    width: 44%;
+    margin-right: 0;
+    padding: 5% 0;
+  }
+
+  .about__description-container h2 {
+    width: 88%;
+  }
+
+  .about__img-wrapper {
+    width: 48%;
+    padding: 0;
+  }
+
+  .about__description-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .advantages__wrapper {
+    width: 85%;
+    padding: 0 7%;
+  }
+
+  .advantages__item {
+    width: 30%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .advantages__item--check p {
+    width: 100%;
+  }
+
+  .advantages__item--boat p {
+    width: 100%;
+  }
+
+  .booking-wrapper {
+    width: 76%;
+    padding: 50px 12%;
+  }
+
+  .booking__text-wrapper {
+    width: 55%;
+  }
+
+  .booking form {
+    width: 38.5%;
+    padding: 4.5%;
+  }
+
+  .booking__form-input-container {
+    width: 100%;
+  }
+
+  .booking__form-input-container input:not(input[type="checkbox"]) {
+    width: 100%;
+  }
+
+  .contacts__map {
+    width: 46%;
+  }
+
+  .contacts__map iframe {
+    width: 100%;
+  }
+
+  .contacts__text {
+    width: 42%;
   }
 }
 

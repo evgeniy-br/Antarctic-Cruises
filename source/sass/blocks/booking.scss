@@ -40,6 +40,11 @@
   justify-content: space-between;
   color: $color-default-black;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 76%;
+    padding: 50px 12%;
+  }
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
     justify-content: flex-start;
@@ -48,6 +53,10 @@
 
 .booking__text-wrapper {
   padding-top: 163px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 55%;
+  }
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -118,6 +127,11 @@
   color: $color-default-white;
   flex-shrink: 0;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 38.5%;
+    padding: 4.5%;
+  }
+
   @media (max-width: $tablet-width) {
     align-self: center;
   }
@@ -151,6 +165,10 @@
 
 .booking__form-input-container {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 100%;
+  }
 }
 
 .booking__form-input-container--email {
@@ -174,6 +192,10 @@
   padding: 10px 14px;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 100%;
+  }
 
   @media (max-width: $mobile-width) {
     width: 230px;

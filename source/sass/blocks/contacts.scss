@@ -31,6 +31,10 @@
   min-height: 306px;
   background: url("../img/background-images/map-desktop.png") no-repeat;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 46%;
+  }
+
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image: url("../img/background-images/map-desktop@2x.png");
     background-size: 560px auto;
@@ -62,6 +66,10 @@
 .contacts__map iframe {
   border: none;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 100%;
+  }
+
   @media (max-width: $tablet-width) {
     width: 324px;
     height: 335px;
@@ -79,6 +87,10 @@
   flex-direction: column;
   width: 500px;
   padding-top: 76px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 42%;
+  }
 
   @media (max-width: $tablet-width) {
     width: 324px;

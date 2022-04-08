@@ -15,6 +15,10 @@
   line-height: 20px;
   color: $color-default-white;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    min-width: 100%;
+  }
+
   @media (max-width: $tablet-width) {
     min-width: 768px;
   }
