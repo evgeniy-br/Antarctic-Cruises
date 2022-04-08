@@ -134,7 +134,10 @@
 .main-nav--footer .main-nav__list {
   align-content: center;
   padding: 2px 0 6px;
-  min-width: 600px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    min-width: 600px;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 0;

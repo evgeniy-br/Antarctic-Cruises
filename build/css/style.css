@@ -584,7 +584,6 @@ img {
   -ms-flex-line-pack: center;
   align-content: center;
   padding: 2px 0 6px;
-  min-width: 600px;
 }
 
 .main-nav__toggle {
@@ -1982,6 +1981,10 @@ img {
 
   .page__body {
     min-width: 100%;
+  }
+
+  .main-nav--footer .main-nav__list {
+    min-width: 600px;
   }
 
   .about__description-container {
