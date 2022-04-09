@@ -4,3 +4,5 @@ const inputPhone = inputContainerPhone.querySelector('input');
 inputPhone.addEventListener('input', () => {
   inputPhone.value = inputPhone.value.replace(/[^\d\+]/g,'');
 })
+
+

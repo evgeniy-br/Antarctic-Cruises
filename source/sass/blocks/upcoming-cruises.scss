@@ -42,11 +42,15 @@
 }
 
 .upcoming-cruises__item {
-  display: grid;
   position: relative;
   width: 260px;
   height: 386px;
   line-height: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 22.4%;
+    height: auto;
+  }
 
   @media (max-width: $tablet-width) {
     width: 309px;
@@ -59,7 +63,6 @@
 
 .upcoming-cruises__item-wrapper {
   width: 100%;
-  grid-area: 1 / 1 / 2 / 2;
 }
 
 .upcoming-cruises__item-wrapper h3 {
@@ -67,9 +70,15 @@
   bottom: 23px;
   left: 30px;
   margin: 0;
+  padding-right: 10px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    bottom: 6%;
+    left: 11%;
+  }
 
   @media (max-width: $tablet-width) {
     bottom: 27px;
@@ -87,6 +96,11 @@
   height: 386px;
   background-color: $color-light-blue;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: 100%;
+    height: auto;
+  }
+
   @media (max-width: $tablet-width) {
     width: 309px;
   }
@@ -97,16 +111,23 @@
 }
 
 .upcoming-cruises__description {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   visibility: hidden;
   overflow-x: hidden;
   overflow-y: auto;
-  grid-area: 1 / 1 / 2 / 2;
   background-color: $color-default-black;
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 29px 25px 35px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    padding: 11% 10% 13%;
+  }
 
   @media (max-width: $tablet-width) {
     padding-left: 35px;
@@ -123,6 +144,10 @@
   line-height: 27px;
   font-weight: 500;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    margin-bottom: 7%;
+  }
 }
 
 .upcoming-cruises__item:hover .upcoming-cruises__description,
@@ -145,6 +170,10 @@
   font-weight: 400;
   margin-bottom: 12px;
   color: $color-medium-gray;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    margin-bottom: 6%;
+  }
 }
 
 .upcoming-cruises__description-list-container:last-child .upcoming-cruises__description-detail {
@@ -172,6 +201,10 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-only) {
+    width: auto;
   }
 
   @media (max-width: $tablet-width) {
