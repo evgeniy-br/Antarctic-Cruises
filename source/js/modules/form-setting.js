@@ -2,5 +2,5 @@ const inputContainerPhone = document.querySelector('.booking__form-input-contain
 const inputPhone = inputContainerPhone.querySelector('input');
 
 inputPhone.addEventListener('input', () => {
-  inputPhone.value = inputPhone.value.replace(/[^\d\+]/g,'');
-})
+  inputPhone.value = inputPhone.value.replace(/[^\d\+]/g, '');
+});

@@ -151,8 +151,7 @@
 }
 
 .upcoming-cruises__item:hover .upcoming-cruises__description,
-.upcoming-cruises__item:focus .upcoming-cruises__description
- {
+.upcoming-cruises__item:focus .upcoming-cruises__description {
   visibility: visible;
   display: flex;
   flex-direction: column;
